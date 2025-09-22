@@ -1,3 +1,9 @@
+## Note
+ERC now provides the ability to stop parting when you kill a channel buffer, you can now use the following in your ERC configuration:
+```elisp
+(remove-hook 'erc-kill-channel-hook 'erc-part-channel-on-kill)
+```
+
 #### It's a ZNC "mode"
 [![MELPA](https://melpa.org/packages/znc-badge.svg)](https://melpa.org/#/znc)
 
